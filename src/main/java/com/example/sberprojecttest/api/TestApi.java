@@ -33,4 +33,11 @@ public class TestApi {
         System.out.println(bundle.getString("key"));
         return user.changeName("Mikel");
     }
+
+    @GetMapping("/mybranch")
+    public User testMyBranch() {
+        User user = new User();
+        System.out.println(bundle.getString("key"));
+        return user.changeName("Mikel");
+    }
 }
