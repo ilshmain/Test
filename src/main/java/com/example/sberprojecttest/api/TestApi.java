@@ -40,4 +40,14 @@ public class TestApi {
         System.out.println(bundle.getString("key"));
         return user.changeName("Mikel");
     }
+
+    @GetMapping("/dima")
+    public User testDima() {
+        User user = new User();
+        user.setName("Tom");
+        user.setLastName("Kruz");
+        user.setAge(18);
+        user.setPhoneNumber(892211);
+        return user.changeName("Mikel");
+    }
 }
